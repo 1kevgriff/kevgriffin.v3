@@ -3,7 +3,6 @@ title: Learn about Windows 7 Task Dialogs
 categories:
   - Development
 permalink: learn-about-windows-7-task-dialogs
-id: 635
 updated: '2009-12-01 07:00:00'
 date: 2009-12-01 07:00:00
 ---

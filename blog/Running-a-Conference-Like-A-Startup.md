@@ -3,7 +3,6 @@ title: Running a Conference Like A Startup?
 permalink: running-a-conference-like-a-startup
 categories:
   - Community, User Groups, and Conferences
-id: 739
 date: 2014-02-23 21:57:40
 ---
 

@@ -4,6 +4,7 @@ date: 2019-02-08 11:04:49
 categories:
   - Business
 tags: career, mastermind
+permalink: Enhancing-Your-Career-with-a-Mastermind-Group
 ---
 
 In 2011, I did something pretty out of character - I quit my job.  Mind you, I didn't do it because I had another job lined up.  Nope.  I quit my job to go out on my own as a business owner.  On top of this, I had a newborn at home and no guarentee that the income would be flowing every two weeks.
