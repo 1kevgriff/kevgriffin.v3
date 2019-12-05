@@ -1,7 +1,13 @@
   
 <template>
-  <div>
-    <CategoryLayout v-for="c in categoryList" :category="c" :key="c"></CategoryLayout>
+  <div class="layout">
+    <SiteHeader />
+    <CategoryLayout
+      v-for="c in categoryList"
+      :category="c"
+      :key="c"
+      :articles="$page.allArticle.edges"
+    ></CategoryLayout>
   </div>
 </template>
 
@@ -10,7 +16,10 @@
   allArticle {
     edges {
       node {
+        id
+        title
         categories
+        permalink
       }
     }
   }
@@ -21,6 +30,7 @@
 
 <script>
 import { uniq } from "lodash";
+import SiteHeader from "~/components/SiteHeader.vue";
 
 export default {
   computed: {
@@ -35,7 +45,8 @@ export default {
 
       return uniq(catList).sort();
     }
-  }
+  },
+  components: { SiteHeader }
 };
 </script>
 

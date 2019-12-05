@@ -1,20 +1,25 @@
 <template>
   <div class="layout">
-    <header class="header">
+    <!-- <header class="header">
       <g-link class="heading-link" :to="{ name: 'home' }">
         <component :is="titleTag" class="heading">Insert header here</component>
       </g-link>
-    </header>
+    </header>-->
+    <SiteHeader />
     <slot />
   </div>
 </template>
 
 <script>
+import SiteHeader from "~/components/SiteHeader.vue";
 export default {
   computed: {
     titleTag() {
       return this.$route.name === "home" ? "h1" : "h6";
     }
+  },
+  components: {
+    SiteHeader
   }
 };
 </script>
