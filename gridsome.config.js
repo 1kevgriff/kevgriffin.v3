@@ -6,7 +6,6 @@
 
 module.exports = {
   siteName: 'Kevin W. Griffin',
-  titleTemplate: '%s by Kevin Griffin',
   plugins: [
     {
       use: '@gridsome/source-filesystem',
