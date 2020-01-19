@@ -9,3 +9,7 @@
 4) Resume
 
 - Set up Azure Pipeline
+
+
+WHERE I LEFT OFF
+2019-12-05: Working on getting my face on the page.
