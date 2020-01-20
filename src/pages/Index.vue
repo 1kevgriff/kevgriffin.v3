@@ -1,7 +1,15 @@
-  
 <template>
-  <Layout class="home">
-    <p>Hello</p>
+  <Layout>
+    <!-- Hi, I'm Kevin -->
+    <Welcome />
+    <!-- Latest Articles -->
+    <LatestArticles />
+    <!-- Training -->
+    <WelcomeTraining />
+    <!-- Consulting -->
+    <WelcomeConsulting />
+    <!-- Contact me -->
+    <Contact />
   </Layout>
 </template>
 
@@ -23,5 +31,13 @@
 
 
 <script>
-export default {};
+import Welcome from "../components/Welcome";
+import WelcomeTraining from "../components/WelcomeTraining";
+import WelcomeConsulting from "../components/WelcomeConsulting";
+import LatestArticles from "../components/LatestArticles";
+import Contact from "../components/Contact.vue";
+
+export default {
+  components: { Welcome, LatestArticles, WelcomeTraining, WelcomeConsulting, Contact }
+};
 </script>

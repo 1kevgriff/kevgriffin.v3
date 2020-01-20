@@ -1,0 +1,15 @@
+/* global.css */
+
+@tailwind base;
+@tailwind components;
+/* Add your btn/input/etc components here */
+
+@tailwind utilities;
+@import url("https://use.typekit.net/wou4pvn.css");
+
+.main-heading {
+    font-family: ff-market-web, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40pt;
+}
