@@ -1,12 +1,14 @@
 <template>
   <div class="layout">
     <SiteHeader />
-    <CategoryLayout
-      v-for="c in categoryList"
-      :category="c"
-      :key="c"
-      :articles="$page.allArticle.edges"
-    ></CategoryLayout>
+    <div class="container mx-auto">
+      <CategoryLayout
+        v-for="c in categoryList"
+        :category="c"
+        :key="c"
+        :articles="$page.allArticle.edges"
+      ></CategoryLayout>
+    </div>
   </div>
 </template>
 

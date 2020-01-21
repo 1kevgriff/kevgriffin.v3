@@ -29,7 +29,6 @@
   }
 </page-query>
 
-
 <script>
 import Welcome from "../components/Welcome";
 import WelcomeTraining from "../components/WelcomeTraining";
