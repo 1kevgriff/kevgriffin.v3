@@ -18,11 +18,8 @@ steps:
 - script: |
     npm install
     npm install --global @gridsome/cli 
-  displayName: 'npm install + gridsome cli'
-
-- script: |
     gridsome build
-  displayName: 'gridsome build'
+  displayName: 'npm install + gridsome cli  + gridsome build'
 
 - task: AzureFileCopy@3
   inputs:
