@@ -19,4 +19,5 @@
     font-weight: 700;
     font-style: normal;
     font-size: 28pt;
+    @apply w-full;
 }
