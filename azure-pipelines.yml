@@ -22,6 +22,7 @@ steps:
 
 - script: |
     gridsome build
+  displayName: 'gridsome build'
 
 - task: AzureFileCopy@3
   inputs:
