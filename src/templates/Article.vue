@@ -1,11 +1,12 @@
 <template>
   <Layout>
     <div class="container mx-auto">
-      <h2 class="sub-heading">{{ $page.article.title }}</h2>
+      <h1 class="sub-heading">{{ $page.article.title }}</h1>
       <p class="italics block">{{ $page.article.date }}</p>
       <br />
-      <div id="articleContent" 
-      v-html="$page.article.content" />
+      <div id="articleContent" v-html="$page.article.content" />
+      <br />
+      <vue-disqus shortname="kevgriff" :identifier="$page.article.permalink"></vue-disqus>
     </div>
   </Layout>
 </template>
@@ -18,7 +19,6 @@ export default {
     };
   }
 };
-
 </script>
 
 <page-query>
@@ -42,5 +42,27 @@ export default {
 }
 #articleContent p {
   @apply mb-5;
+}
+
+#articleContent h2 {
+  @apply text-3xl;
+}
+
+#articleContent h3 {
+  @apply text-2xl;
+}
+
+#articleContent ol {
+  @apply list-decimal;
+  @apply ml-8;
+}
+
+#articleContent ul {
+  @apply list-disc;
+  @apply ml-8;
+}
+
+#articleContent iframe {
+  @apply mx-auto;
 }
 </style>
