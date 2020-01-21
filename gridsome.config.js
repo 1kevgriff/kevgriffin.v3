@@ -16,7 +16,12 @@ module.exports = {
       options: {
         path: 'blog/*.md',
         typeName: 'Article',
-        route: '/:permalink'
+        route: '/:permalink',
+        remark: {
+          plugins: [
+            ['gridsome-plugin-remark-shiki', { theme: 'nord', skipInline: false }]
+          ]
+        }
       }
     }
   ],

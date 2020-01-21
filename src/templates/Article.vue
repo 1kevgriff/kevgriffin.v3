@@ -38,6 +38,7 @@ export default {
 #articleContent pre {
   @apply mt-10;
   @apply mb-10;
+  @apply p-5;
 }
 #articleContent p {
   @apply mb-5;
