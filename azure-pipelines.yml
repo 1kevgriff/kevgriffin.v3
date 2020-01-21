@@ -23,7 +23,7 @@ steps:
 
 - task: AzureFileCopy@3
   inputs:
-    SourcePath: '~/dist'
+    SourcePath: 'dist'
     azureSubscription: 'Microsoft Azure Sponsorship(c36e07bf-0eab-4330-aa8e-7f95fdcf3319)'
     Destination: 'AzureBlob'
     storage: 'kevgriffinv3'
